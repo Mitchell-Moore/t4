@@ -40,6 +40,7 @@ export default class AutoCompleteText extends React.Component {
   };
 
   suggestionSelected(value) {
+    this.setState({text: value.title})
     this.setState({movie: value})
 
     this.setState(() => ({ isSelected: true }));
